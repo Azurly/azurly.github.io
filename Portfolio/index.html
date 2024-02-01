@@ -158,13 +158,15 @@
     </section>
 
     <!-- Compétences Section -->
-    <button class="btn btn-primary" id="showSkillsBtn">Voir les Compétences</button>
 
     <section id="skills" style="display: none;">
         <div class="container">
             <h2>Compétences</h2>
             <h3>Technologies Maîtrisées</h3>
-            <div class="row">
+            
+            <button class="btn btn-primary" id="showSkillsBtn">Voir les Compétences</button>
+
+            <div class="row" id="skillToggle">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="card-img-top" alt="HTML">
@@ -358,7 +360,7 @@
 <script>
     $(document).ready(function() {
         $("#showSkillsBtn").click(function() {
-            $("#skills").slideToggle();
+            $("#skillToggle").slideToggle();
         });
     });
 </script>
