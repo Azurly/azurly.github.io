@@ -5,19 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Mon Portfolio</title>
-    <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-<!-- Bootstrap JS, Popper.js -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-     <!-- Bootstrap JS, Popper.js, and jQuery -->
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sixtyfour&display=swap" rel="stylesheet">
@@ -125,7 +112,7 @@
             min-width: 196px;
         }
         }
-        
+
         ul {
         list-style-type: none;
         }
@@ -218,7 +205,7 @@
             <h2>Compétences</h2>
             <h3>Technologies Maîtrisées</h3>
             <button class="button-64 btn btn-primary" role="button" id="showSkillsBtn"><span class="text">Voir les Compétences</span></button>
-            <div class="row" id="skillToggle" style="display: none;">
+            <div class="row" id="skillToggle">
                 <div class="col-md-4">
                     <div class="card">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="card-img-top" alt="HTML">
@@ -408,15 +395,11 @@
         <p>&copy; 2024 HEMERY Nathan - Tout Droits Réservés</p>
     </footer>
 </div>
-   
-<!-- Script pour afficher/masquer la section des compétences -->
-<script>
-    $(document).ready(function() {
-        $("#showSkillsBtn").click(function() {
-            $("#skillToggle").slideToggle();
-        });
-    });
-</script>
+ <!-- Bootstrap JS, Popper.js, and jQuery -->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+<!-- Bootstrap CSS -->
 </body>
 
 </html>
