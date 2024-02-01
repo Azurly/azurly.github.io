@@ -355,8 +355,8 @@
 
     // Fonction pour générer une couleur de gris aléatoire
     function getRandomGray() {
-        const min = 200; // Valeur minimale pour le gris (claire)
-        const max = 255; // Valeur maximale pour le gris (foncée)
+        const min = 25; // Valeur minimale pour le gris (claire)
+        const max = 100; // Valeur maximale pour le gris (foncée)
         const randomGray = Math.floor(Math.random() * (max - min + 1)) + min;
         return `rgb(${randomGray}, ${randomGray}, ${randomGray})`;
     }
