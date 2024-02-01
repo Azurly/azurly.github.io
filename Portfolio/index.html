@@ -17,6 +17,11 @@
             color: #ffffff;
             background-color: #282c34;
             font-family: 'Roboto', sans-serif;
+            height: 100vh; /* 100% de la hauteur de la vue */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.5s ease; /* Transition de couleur de fond */
         }
 
         header {
@@ -95,9 +100,9 @@
     <div class="bggif">
         <!-- Header -->
         <header class="bg-transparent text-white">
-            <nav class="navbar navbar-expand-lg navbar-light text-light font-weight-bold">
+            <nav class="navbar navbar-expand-lg navbar-light text-light">
                 <div>
-                    <h3 class="sixtyfourFont">Hemery Nathan</h1>
+                    <h1 class="sixtyfourFont">Hemery Nathan</h1>
                 </div>
                 <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -376,5 +381,26 @@
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 <!-- Bootstrap CSS -->
 </body>
+<script>
 
+    // Fonction pour générer une couleur de gris aléatoire
+    function getRandomGray() {
+        const min = 150; // Valeur minimale pour le gris (claire)
+        const max = 200; // Valeur maximale pour le gris (foncée)
+        const randomGray = Math.floor(Math.random() * (max - min + 1)) + min;
+        return `rgb(${randomGray}, ${randomGray}, ${randomGray})`;
+    }
+    
+    // Fonction pour définir la couleur de fond avec une transition fluide
+    function setBackgroundColor() {
+        const body = document.body;
+        body.style.backgroundColor = getRandomGray();
+    }
+    
+    // Appel initial de la fonction pour définir la couleur de fond au chargement de la page
+    setBackgroundColor();
+    
+    // Appel de la fonction périodiquement pour changer dynamiquement la couleur de fond
+    setInterval(setBackgroundColor, 5000); // Change toutes les 5 secondes (ajustez selon vos préférences)
+    </script>
 </html>
