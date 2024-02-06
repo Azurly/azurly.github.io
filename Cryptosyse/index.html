@@ -3,58 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Univers de Science-Fiction</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Portfolio de Science-Fiction</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">Univers de Science-Fiction</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">A propos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Livres</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <div class="container">
+            <h1>John Doe</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#books">Livres</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <div class="clouds"></div>
 
-    <div class="content">
-    <section class="container main-content">
-        <h2 class="text-center">Découvrez notre collection de livres</h2>
-        <p class="text-center">Plongez dans des mondes futuristes, explorez l'inconnu, et laissez-vous emporter par l'imagination débordante des auteurs de science-fiction.</p>
-        <div class="text-center">
-            <a href="#" class="btn btn-primary">Voir les livres</a>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>À Propos de Moi</h2>
+            <p>Je suis un auteur passionné par la science-fiction depuis mon plus jeune âge. Mon objectif est de créer des mondes extraordinaires et de captiver mes lecteurs avec des histoires qui repoussent les limites de l'imagination.</p>
         </div>
     </section>
-    </div>
-    <footer class="footer">
+
+    <section id="books" class="books-section">
         <div class="container">
-            <p>&copy; 2024 Univers de Science-Fiction. Tous droits réservés.</p>
+            <h2>Mes Livres</h2>
+            <div class="book">
+                <h3>L'Explorateur des Étoiles</h3>
+                <p>Un voyage épique à travers les galaxies, où un héros solitaire découvre les mystères cachés de l'univers.</p>
+            </div>
+            <div class="book">
+                <h3>La Cité Sous-Marine</h3>
+                <p>Dans un avenir post-apocalyptique, l'humanité lutte pour sa survie au fond des océans, confrontée à des dangers inconnus.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Contactez-Moi</h2>
+            <form>
+                <input type="text" placeholder="Nom">
+                <input type="email" placeholder="Email">
+                <textarea placeholder="Message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John Doe - Tous droits réservés</p>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
