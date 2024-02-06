@@ -9,9 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200&family=Sixtyfour&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Custom CSS -->
     <style>
@@ -20,18 +22,15 @@
             color: #ffffff;
             background-color: #282c34;
             font-family: 'Roboto', sans-serif;
-            /* 100% de la hauteur de la vue */
             align-items: center;
             justify-content: center;
             transition: background-color 0.1s ease;
-            /* Transition de couleur de fond */
         }
 
         header {
             color: #ffffff;
             padding: 25px 0;
             text-align: center;
-            justify-content: center;
         }
 
         .sixtyfourFont {
@@ -40,7 +39,6 @@
 
         section {
             padding: 50px 0;
-            justify-content: center;
         }
 
         .card {
@@ -97,7 +95,22 @@
             background-size: cover;
         }
 
-        @media (max-width: 767px) {}
+        @media (max-width: 767px) {
+            .jumbotron h1 {
+                font-size: 2em;
+                /* Réduire la taille du titre sur les petits écrans */
+            }
+
+            .jumbotron p {
+                font-size: 1em;
+                /* Réduire la taille du texte sur les petits écrans */
+            }
+
+            .navbar {
+                padding: 10px;
+                /* Réduire l'espace autour de la navbar sur les petits écrans */
+            }
+        }
     </style>
 </head>
 
@@ -121,34 +134,39 @@
                                 <a class="nav-link text-white" href="#about">À Propos</a>
                             </li>
                             <li class="nav-item dropdown"> <!-- Menu Déroulant -->
-                                <a class="nav-link dropdown-toggle text-white" href="#" id="portfolioDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle text-white" href="#" id="portfolioDropdown"
+                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Portfolio
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="portfolioDropdown">
-                                    <a class="dropdown-item" href="ressources/Compte Rendu de Stage FAC et LABORATOIRE.pdf">Stage première année BTS SIO</a>
+                                    <a class="dropdown-item"
+                                        href="ressources/Compte Rendu de Stage FAC et LABORATOIRE.pdf">Stage première
+                                        année BTS SIO</a>
                                     <a class="dropdown-item" href="ressources/CV.pdf">CV</a>
                                     <a class="dropdown-item" href="#">Grille d'évaluation BTS SIO</a>
-                                    <a class="dropdown-item" href="https://github.com/Azurly/MediaTekDocuments">Projet C#</a>
-                                    <a class="dropdown-item" href="https://github.com/Azurly/mediatekformation-master01">Projet MVC</a>
+                                    <a class="dropdown-item" href="https://github.com/Azurly/MediaTekDocuments">Projet
+                                        C#</a>
+                                    <a class="dropdown-item"
+                                        href="https://github.com/Azurly/mediatekformation-master01">Projet MVC</a>
                                     <a class="dropdown-item" href="#">Projet indépendant</a>
-                                    <a class="dropdown-item" href="https://github.com/Azurly/rest_testAPI">Projet API</a>
+                                    <a class="dropdown-item" href="https://github.com/Azurly/rest_testAPI">Projet
+                                        API</a>
                                     <a class="dropdown-item" href="#">Veille Technologique BTS SIO</a>
                                     <!-- Ajoutez d'autres propositions de portfolio ici -->
                                 </div>
                             </li>
-                            <li class="nav-item">
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#skills">Compétences</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#experience">Parcours</a>
                             </li>
+                            <li class="nav-item">
                                 <a class="nav-link text-white" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
-
             </header>
 
             <!-- Grande Cover avec Phrase d'Accroche -->
@@ -208,78 +226,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                                        class="card-img-top" alt="JavaScript">
-                                    <div class="card-body">
-                                        <h5 class="card-title">JavaScript</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                                        class="card-img-top" alt="PHP">
-                                    <div class="card-body">
-                                        <h5 class="card-title">PHP</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
-                                        class="card-img-top" alt="SQL">
-                                    <div class="card-body">
-                                        <h5 class="card-title">SQL</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
-                                        class="card-img-top" alt="Python">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Python</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
-                                        class="card-img-top" alt="C#">
-                                    <div class="card-body">
-                                        <h5 class="card-title">C#</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg"
-                                        class="card-img-top" alt="Symfony">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Symfony</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
-                                        class="card-img-top" alt="Java">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Java</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-4 mb-4">
-                                <div class="card">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
-                                        class="card-img-top" alt="C++">
-                                    <div class="card-body">
-                                        <h5 class="card-title">C++</h5>
-                                    </div>
-                                </div>
-                            </div>
                             <!-- Ajoutez d'autres compétences ici -->
                         </div>
                     </div>
@@ -296,21 +242,6 @@
                                 <p class="card-text">Agent polyvalent, en parrallèle des études.</p>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">2022-2023 - OPCO EP</h5>
-                                <p class="card-text">Assistant dans la direction des opérations, dans le cadre des
-                                    études.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">2021 - Jules & John</h5>
-                                <p class="card-text">Travaille saisonnier dans un fast food.</p>
-                            </div>
-                        </div>
-
                         <!-- Ajoutez d'autres expériences professionnelles ici -->
 
                         <h3>Éducation</h3>
@@ -318,12 +249,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">2021-2023 - Lycée Carcouët</h5>
                                 <p class="card-text">BTS SIO option SLAM</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-body">
-                                <h5 class="card-title">2019-2021 - Lycée Aristide Briant, Saint-Nazaire</h5>
-                                <p class="card-text">Bac STI2D Option SIN</p>
                             </div>
                         </div>
                         <!-- Ajoutez d'autres établissements scolaires ici -->
@@ -335,17 +260,19 @@
                     <div class="container text-bold">
                         <h2>Contact</h2>
                         <ul>
-                            <li><span class="material-symbols-outlined">call</span><a href="mailto:hnathan.pornic@gmail.com">hnathan.pornic@gmail.com</a></li>
-                            <li><span class="material-symbols-outlined">mail</span><a href="tel:+33783578958">07.83.57.89.58</a></li>
+                            <li><span class="material-symbols-outlined">call</span><a
+                                    href="mailto:hnathan.pornic@gmail.com">hnathan.pornic@gmail.com</a></li>
+                            <li><span class="material-symbols-outlined">mail</span><a
+                                    href="tel:+33783578958">07.83.57.89.58</a></li>
                             <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-                                width="25px" height="auto" />
-                            <a href="https://www.linkedin.com/in/nathan-hemery-022a6b232/"
-                                target="_blank">LinkedIn</a>
-                        </li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                                width="25px" height="auto" />
-                            <a href="https://github.com/azurly" target="_blank">GitHub</a>
-                        </li>
+                                    width="25px" height="auto" />
+                                <a href="https://www.linkedin.com/in/nathan-hemery-022a6b232/"
+                                    target="_blank">LinkedIn</a>
+                            </li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                                    width="25px" height="auto" />
+                                <a href="https://github.com/azurly" target="_blank">GitHub</a>
+                            </li>
                         </ul>
                     </div>
                 </section>
