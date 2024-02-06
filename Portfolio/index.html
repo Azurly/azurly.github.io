@@ -22,7 +22,6 @@
     <style>
         body {
             margin: 0;
-            color: #000000; /* Couleur du texte par défaut (noir) */
             background-color: #ffffff; /* Couleur de fond par défaut (blanc) */
             transition: background-color 0.3s ease; /* Transition fluide pour les changements de couleur */
             font-family: 'Roboto', sans-serif;
@@ -34,6 +33,10 @@
         .dark-mode {
             background-color: #282c34; /* Couleur de fond en mode sombre */
             color: #ffffff; /* Couleur du texte en mode sombre */
+        }
+        .dark-mode .card {
+            background-color: #000000; /* Couleur de fond en mode sombre */
+            border-color: #ffffff; /* Couleur de la bordure en mode sombre */
         }
         /* CSS */
         .button-31 {
@@ -98,10 +101,10 @@
         }
 
         .card {
-            background-color: #343a40;
-            color: #ffffff;
+            background-color: #282c34; /* Couleur de fond par défaut */
+            color: #ffffff; /* Couleur du texte */
             border: 1px solid #555;
-            transition: transform 0.2s;
+            transition: background-color 0.2s, border-color 0.2s;
         }
 
         .card:hover {
@@ -111,7 +114,6 @@
 
         .footer {
             background-color: #282c34;
-            color: #ffffff;
             text-align: center;
             padding: 10px 0;
             bottom: 0;
