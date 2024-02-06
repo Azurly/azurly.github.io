@@ -68,18 +68,21 @@ footer {
 }
 
 .stars {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Sirius_A_and_B_Hubble_photo.jpg/800px-Sirius_A_and_B_Hubble_photo.jpg') repeat;
+    background: #000;
     z-index: 0;
 }
 
 .twinkling {
-    background: url('https://static.wixstatic.com/media/47f1e4_3bb74825b48c498fa5b6b48ee5bc5d04~mv2.gif') repeat;
+    background: radial-gradient(circle, #fff 0%, transparent 50%), radial-gradient(circle, #fff 0%, transparent 50%);
+    background-position: 0 0, 40% 80%;
+    background-size: 30px 30px, 20px 20px;
     z-index: 1;
     animation: animate-twinkling 10s linear infinite;
 }
 
 .clouds {
-    background: url('https://images.unsplash.com/photo-1557722738-24d5ed3a7a1c') repeat;
+    background: radial-gradient(circle, #fff 10%, transparent 50%);
+    background-size: 300px 300px;
     z-index: 2;
     animation: animate-clouds 20s linear infinite;
 }
@@ -104,11 +107,10 @@ footer {
 
 @keyframes animate-twinkling {
     from { background-position: 0 0; }
-    to { background-position: 10000px 0; }
+    to { background-position: 1000px 1000px; }
 }
 
 @keyframes animate-clouds {
     from { background-position: 0 0; }
-    to { background-position: 10000px 0; }
+    to { background-position: 1000px 1000px; }
 }
-
