@@ -461,26 +461,6 @@
     darkModeBtn.addEventListener('click', function() {
         document.body.classList.toggle('dark-mode');
     });
-
-    // Fonction pour générer une couleur de gris aléatoire
-    function getRandomGray() {
-        const min = 25; // Valeur minimale pour le gris (claire)
-        const max = 100; // Valeur maximale pour le gris (foncée)
-        const randomGray = Math.floor(Math.random() * (max - min + 1)) + min;
-        return `rgb(${randomGray}, ${randomGray}, ${randomGray})`;
-    }
-
-    // Fonction pour définir la couleur de fond avec une transition fluide
-    function setBackgroundColor() {
-        const body = document.body;
-        body.style.backgroundColor = getRandomGray();
-    }
-
-    // Appel initial de la fonction pour définir la couleur de fond au chargement de la page
-    setBackgroundColor();
-
-    // Appel de la fonction périodiquement pour changer dynamiquement la couleur de fond
-    setInterval(setBackgroundColor, 5000); // Change toutes les 5 secondes (ajustez selon vos préférences)
 </script>
 
 </html>
