@@ -114,7 +114,6 @@
         }
 
         .footer {
-            background-color: #282c34;
             text-align: center;
             padding: 10px 0;
             bottom: 0;
@@ -264,9 +263,9 @@
                 <section id="skills">
                     <div class="container">
                         <h2 class="mb-4">Compétences</h2>
-                        <h3 class="mb-3">Technologies Maîtrisées</h3>
                         <br>
                         <div class="row">
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
@@ -276,6 +275,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
@@ -285,6 +285,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -294,6 +295,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
@@ -303,6 +305,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
@@ -312,6 +315,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
@@ -321,6 +325,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
@@ -330,6 +335,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg"
@@ -339,6 +345,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
@@ -348,6 +355,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-6 col-lg-4 mb-4">
                                 <div class="card">
                                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg"
@@ -357,11 +365,53 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Ajoutez d'autres compétences ici -->
+
                         </div>
                     </div>
                 </section>
 
+                <section id="skills">
+                    <div class="container">
+                        <h2 class="mb-4">Compétences</h2>
+                        <div class="accordion" id="skillsAccordion">
+                            <!-- HTML pour chaque compétence -->
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                            Technologie 1
+                                        </button>
+                                    </h2>
+                                </div>
+                
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#skillsAccordion">
+                                    <div class="card-body">
+                                        Contenu de la compétence 1
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Répéter ce bloc pour chaque compétence -->
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Technologie 2
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#skillsAccordion">
+                                    <div class="card-body">
+                                        Contenu de la compétence 2
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Répéter ce bloc pour chaque compétence -->
+                        </div>
+                    </div>
+                </section>
                 <!-- Parcours Section -->
                 <section id="experience">
                     <div class="container">
