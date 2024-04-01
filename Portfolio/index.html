@@ -560,19 +560,23 @@
                 <!-- Section BTS SIO ( Situations prefessionnelles )-->
                 <section id="btssio">
                     <div class="container">
-                        <div class="row align-items-center">
-                            <div class="col-md-4 text-center">
-                                <!-- Image en cercle -->
-                                <img src="img/photo.jpg" alt="Photo Nathan" class="rounded-circle" height="300px">
+                        <h2>Mes Projets - Situations Professionnelles</h2>
+                        <div class="accordion" id="projectAccordion">
+                            <div class="card">
+                                <div class="card-header" id="projectHeading1">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#projectCollapse1" aria-expanded="true" aria-controls="projectCollapse1">
+                                            Projet 1
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="projectCollapse1" class="collapse show" aria-labelledby="projectHeading1" data-parent="#projectAccordion">
+                                    <div class="card-body">
+                                        Contenu détaillé du projet 1
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-8">
-                                <h2>À Propos de Moi</h2>
-                                <p>Étudiant en deuxième année de BTS SIO et avec mon expérience en informatique, je
-                                    pourrais
-                                    vous apporter mon aide dans la création de votre projet. En dehors de la
-                                    programmation,
-                                    je m'intéresse aux nouveautés technologiques et high-tech.</p>
-                            </div>
+                            <!-- Ajoutez d'autres projets de la même manière -->
                         </div>
                     </div>
                 </section>
